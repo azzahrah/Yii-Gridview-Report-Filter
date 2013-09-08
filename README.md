@@ -35,7 +35,7 @@ public function actionReport() {
   //the criteria will be passed to each postProcess function in RfilterWidget filter 
   $criteria = $filter->preProcess($criteria);
   
-  $dataProvider = new CActiveDataProvider('YourModel', $criteria);
+  $dataProvider = new CActiveDataProvider('YourModel', array('criteria'=>$criteria));
 
   #### Using CArrayDataProvider ####
   
